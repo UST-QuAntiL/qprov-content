@@ -1,39 +1,39 @@
 <prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:ns2="http://openprovenance.org/prov/extension#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:vargen="http://openprovenance.org/vargen#" xmlns:tmpl="http://openprovenance.org/tmpl#" xmlns:var="http://openprovenance.org/var#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:qprov="http://www.quantil.org/qprov#">    
     <prov:entity prov:id="var:baseCircuit">    
-		<prov:label>Base Circuit</prov:label>    
+        <prov:label>Base Circuit</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:quantumCircuit</prov:type>    
-		<qprov:circuitName xsi:type="xsd:string">Quantum Full Adder</qprov:circuitName>    
-		<qprov:circuitDepth xsi:type="xsd:string">5</qprov:circuitDepth>    
-		<qprov:circuitWidth xsi:type="xsd:string">4</qprov:circuitWidth>    
-		<qprov:circuitSize xsi:type="xsd:string">5</qprov:circuitSize>    
-		<qprov:circuitCodeUrl xsi:type="xsd:string">https://raw.githubusercontent.com/UST-QuAntiL/qprov-content/main/provenance-graphs/circuits/adder.py</qprov:circuitCodeUrl>    
+        <qprov:circuitName xsi:type="xsd:string">Quantum Full Adder</qprov:circuitName>    
+        <qprov:circuitDepth xsi:type="xsd:string">5</qprov:circuitDepth>    
+        <qprov:circuitWidth xsi:type="xsd:string">4</qprov:circuitWidth>    
+        <qprov:circuitSize xsi:type="xsd:string">5</qprov:circuitSize>    
+        <qprov:circuitCodeUrl xsi:type="xsd:string">https://raw.githubusercontent.com/UST-QuAntiL/qprov-content/main/provenance-graphs/circuits/adder.py</qprov:circuitCodeUrl>    
     </prov:entity>    
-	<prov:entity prov:id="var:inputData">    
-		<prov:label>Input Data</prov:label>    
+    <prov:entity prov:id="var:inputData">    
+        <prov:label>Input Data</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:classicalData</prov:type>    
-		<prov:value xsi:type="xsd:string">a=1,b=1,carry=1</prov:value>    
+        <prov:value xsi:type="xsd:string">a=1,b=1,carry=1</prov:value>    
     </prov:entity>    
-	<prov:activity prov:id="var:initializeCircuit">    
-		<prov:label>Initialize Circuit</prov:label>    
+    <prov:activity prov:id="var:initializeCircuit">    
+        <prov:label>Initialize Circuit</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:prepareDataActivity</prov:type>    
-		<qprov:appliedEncoding xsi:type="xsd:string">Basis Encoding</qprov:appliedEncoding>    
-	</prov:activity>    
-	<prov:agent prov:id="var:dataPreparationService">    
-		<prov:label>Data Preparation Service</prov:label>    
+        <qprov:appliedEncoding xsi:type="xsd:string">Basis Encoding</qprov:appliedEncoding>    
+    </prov:activity>    
+    <prov:agent prov:id="var:dataPreparationService">    
+        <prov:label>Data Preparation Service</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:dataPreparationService</prov:type>    
-		<qprov:dataPreparationServiceName xsi:type="xsd:string">manual</qprov:dataPreparationServiceName>    
-		<qprov:dataPreparationServiceProviderName xsi:type="xsd:string">none</qprov:dataPreparationServiceProviderName>    
-		<qprov:dataPreparationServiceVersion xsi:type="xsd:string">none</qprov:dataPreparationServiceVersion>    
-	</prov:agent>    
-	<prov:used prov:id="var:used1">    
+        <qprov:dataPreparationServiceName xsi:type="xsd:string">manual</qprov:dataPreparationServiceName>    
+        <qprov:dataPreparationServiceProviderName xsi:type="xsd:string">none</qprov:dataPreparationServiceProviderName>    
+        <qprov:dataPreparationServiceVersion xsi:type="xsd:string">none</qprov:dataPreparationServiceVersion>    
+    </prov:agent>    
+    <prov:used prov:id="var:used1">    
         <prov:activity prov:ref="var:initializeCircuit"/>    
         <prov:entity prov:ref="var:inputData"/>    
     </prov:used>    
-	<prov:used prov:id="var:used2">    
+    <prov:used prov:id="var:used2">    
         <prov:activity prov:ref="var:initializeCircuit"/>    
         <prov:entity prov:ref="var:baseCircuit"/>    
     </prov:used>    
-	<prov:wasAssociatedWith prov:id="var:wasAssociatedWith1">    
+    <prov:wasAssociatedWith prov:id="var:wasAssociatedWith1">    
         <prov:agent prov:ref="var:dataPreparationService"/>    
         <prov:activity prov:ref="var:initializeCircuit"/>    
     </prov:wasAssociatedWith>    
@@ -44,35 +44,35 @@
         <qprov:circuitDepth xsi:type="xsd:string">6</qprov:circuitDepth>    
         <qprov:circuitWidth xsi:type="xsd:string">4</qprov:circuitWidth>    
         <qprov:circuitSize xsi:type="xsd:string">8</qprov:circuitSize>    
-		<qprov:circuitCodeUrl xsi:type="xsd:string">https://raw.githubusercontent.com/UST-QuAntiL/qprov-content/main/provenance-graphs/circuits/adder-initialized.py</qprov:circuitCodeUrl>    
+        <qprov:circuitCodeUrl xsi:type="xsd:string">https://raw.githubusercontent.com/UST-QuAntiL/qprov-content/main/provenance-graphs/circuits/adder-initialized.py</qprov:circuitCodeUrl>    
     </prov:entity>    
-	<prov:wasGeneratedBy prov:id="var:generated1">    
+    <prov:wasGeneratedBy prov:id="var:generated1">    
         <prov:entity prov:ref="var:initializedCircuit"/>    
         <prov:activity prov:ref="var:initializeCircuit"/>    
     </prov:wasGeneratedBy>    
-	<prov:activity prov:id="var:transpileCircuit">    
-		<prov:label>Transpile Circuit</prov:label>    
+    <prov:activity prov:id="var:transpileCircuit">    
+        <prov:label>Transpile Circuit</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:compileActivity</prov:type>    
-		<qprov:compilationTime xsi:type="xsd:string">703ms</qprov:compilationTime>    
-		<qprov:optimizationGoal xsi:type="xsd:string">Heavy optimization</qprov:optimizationGoal>    
-		<qprov:randomSeed xsi:type="xsd:string">none</qprov:randomSeed>    
-	</prov:activity>    
-	<prov:agent prov:id="var:transpiler">    
-		<prov:label>Qiskit Transpiler</prov:label>    
+        <qprov:compilationTime xsi:type="xsd:string">703ms</qprov:compilationTime>    
+        <qprov:optimizationGoal xsi:type="xsd:string">Heavy optimization</qprov:optimizationGoal>    
+        <qprov:randomSeed xsi:type="xsd:string">none</qprov:randomSeed>    
+    </prov:activity>    
+    <prov:agent prov:id="var:transpiler">    
+        <prov:label>Qiskit Transpiler</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:compiler</prov:type>    
-		<qprov:compilerName xsi:type="xsd:string">qiskit.compiler</qprov:compilerName>    
-		<qprov:compilerProviderName xsi:type="xsd:string">IBM</qprov:compilerProviderName>    
-		<qprov:compilerVersion xsi:type="xsd:string">0.23.1</qprov:compilerVersion>    
-	</prov:agent>    
-	<prov:used prov:id="var:used3">    
+        <qprov:compilerName xsi:type="xsd:string">qiskit.compiler</qprov:compilerName>    
+        <qprov:compilerProviderName xsi:type="xsd:string">IBM</qprov:compilerProviderName>    
+        <qprov:compilerVersion xsi:type="xsd:string">0.23.1</qprov:compilerVersion>    
+    </prov:agent>    
+    <prov:used prov:id="var:used3">    
         <prov:activity prov:ref="var:transpileCircuit"/>    
         <prov:entity prov:ref="var:initializedCircuit"/>    
     </prov:used>    
-	<prov:wasAssociatedWith prov:id="var:wasAssociatedWith2">    
+    <prov:wasAssociatedWith prov:id="var:wasAssociatedWith2">    
         <prov:agent prov:ref="var:transpiler"/>    
         <prov:activity prov:ref="var:transpileCircuit"/>    
     </prov:wasAssociatedWith>    
-	<prov:entity prov:id="var:transpiledCircuit">    
+    <prov:entity prov:id="var:transpiledCircuit">    
         <prov:label>Transpiled Circuit</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:quantumCircuit</prov:type>    
         <qprov:circuitName xsi:type="xsd:string">Transpiled Quantum Full Adder</qprov:circuitName>    
@@ -80,35 +80,35 @@
         <qprov:circuitWidth xsi:type="xsd:string">4</qprov:circuitWidth>    
         <qprov:circuitSize xsi:type="xsd:string">12</qprov:circuitSize>    
     </prov:entity>    
-	<prov:wasGeneratedBy prov:id="var:generated2">    
+    <prov:wasGeneratedBy prov:id="var:generated2">    
         <prov:entity prov:ref="var:transpiledCircuit"/>    
         <prov:activity prov:ref="var:transpileCircuit"/>    
     </prov:wasGeneratedBy>    
-	<prov:activity prov:id="var:executeCircuit">    
-		<prov:label>Execute Circuit</prov:label>    
+    <prov:activity prov:id="var:executeCircuit">    
+        <prov:label>Execute Circuit</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:executeActivity</prov:type>    
-		<qprov:executionTime xsi:type="xsd:string">5.4s</qprov:executionTime>    
-		<qprov:numberOfShots xsi:type="xsd:string">1024</qprov:numberOfShots>    
-		<qprov:appliedMitigationTechnique xsi:type="xsd:string">none</qprov:appliedMitigationTechnique>    
-	</prov:activity>    
-	<prov:used prov:id="var:used4">    
+        <qprov:executionTime xsi:type="xsd:string">5.4s</qprov:executionTime>    
+        <qprov:numberOfShots xsi:type="xsd:string">1024</qprov:numberOfShots>    
+        <qprov:appliedMitigationTechnique xsi:type="xsd:string">none</qprov:appliedMitigationTechnique>    
+    </prov:activity>    
+    <prov:used prov:id="var:used4">    
         <prov:activity prov:ref="var:executeCircuit"/>    
         <prov:entity prov:ref="var:transpiledCircuit"/>    
     </prov:used>    
-	<prov:entity prov:id="var:outputData">    
-		<prov:label>Output Data</prov:label>    
+    <prov:entity prov:id="var:outputData">    
+        <prov:label>Output Data</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:classicalData</prov:type>    
-		<prov:value xsi:type="xsd:string">{'00': 85, '01': 103, '10': 106, '11': 730}</prov:value>    
+        <prov:value xsi:type="xsd:string">{'00': 85, '01': 103, '10': 106, '11': 730}</prov:value>    
     </prov:entity>    
-	<prov:wasGeneratedBy prov:id="var:generated3">    
+    <prov:wasGeneratedBy prov:id="var:generated3">    
         <prov:entity prov:ref="var:outputData"/>    
         <prov:activity prov:ref="var:executeCircuit"/>    
     </prov:wasGeneratedBy>    
-	<prov:agent prov:id="var:QPU">    
-		<prov:label>QPU</prov:label>    
+    <prov:agent prov:id="var:QPU">    
+        <prov:label>QPU</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:qpu</prov:type>    
-		<qprov:qpuName xsi:type="xsd:string">ibmq_valencia</qprov:qpuName>    
-		<qprov:lastUpdate xsi:type="xsd:string">2020/12/14, 10:55:02</qprov:lastUpdate>    
+        <qprov:qpuName xsi:type="xsd:string">ibmq_valencia</qprov:qpuName>    
+        <qprov:lastUpdate xsi:type="xsd:string">2020/12/14, 10:55:02</qprov:lastUpdate>    
         <qprov:lastCalibration xsi:type="xsd:string">2020/12/13, 9:55:02</qprov:lastCalibration>    
         <qprov:maxShots xsi:type="xsd:string">8192</qprov:maxShots>    
         <qprov:qpuVersion xsi:type="xsd:string">1.4.3</qprov:qpuVersion>    
