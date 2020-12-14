@@ -16,7 +16,7 @@
     <prov:activity prov:id="var:initializeCircuit">    
         <prov:label>Initialize Circuit</prov:label>    
         <prov:type xsi:type="xsd:QName">qprov:prepareDataActivity</prov:type>    
-        <qprov:appliedEncoding xsi:type="xsd:string">Basis Encoding</qprov:appliedEncoding>    
+        <qprov:encoding xsi:type="xsd:string">Basis Encoding</qprov:encoding>    
     </prov:activity>    
     <prov:agent prov:id="var:dataPreparationService">    
         <prov:label>Data Preparation Service</prov:label>    
