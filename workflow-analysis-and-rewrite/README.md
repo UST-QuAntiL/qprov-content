@@ -5,9 +5,9 @@ This folder contains the provenance data collected for the analysis and rewrite 
 It comprises the following data:
 
 * measurements of the time required to analyse and rewrite quantum workflows 
-    * [runtime-analysis-and-rewrite.xlxs](./runtime-analysis-and-rewrite.xlxs)
+    * [runtime-analysis-and-rewrite.xlsx](./runtime-analysis-and-rewrite.xlsx)
     * [runtime-analysis-and-rewrite.csv](./runtime-analysis-and-rewrite.csv)
 
 * runtime comparison of a workflow model comprising hybrid algorithms before and after rewriting
-    * [runtime-comparison-workflow.xlxs](./runtime-comparison-workflow.xlxs)
+    * [runtime-comparison-workflow.xlsx](./runtime-comparison-workflow.xlsx)
     * [runtime-comparison-workflow.csv](./runtime-comparison-workflow.csv)
