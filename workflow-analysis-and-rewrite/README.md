@@ -6,7 +6,7 @@ It comprises two sub-folders:
 
 * [2022-closer](./2022-closer): 
     * Evaluation of the performance of the analysis and rewrite method
-    * Small comparison of the runtime of original and rewriten workflows
+    * Small comparison of the runtime of original and rewritten workflows
     
 * [2022-sncs](./2022-sncs):
     * Extended evaluation of the analysis and rewrite method
