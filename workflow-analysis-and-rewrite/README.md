@@ -1,13 +1,14 @@
-# Workflow Analysis and Rewrite
+# Workflow Analysis and Rewrite for Hybrid Runtimes
 
-This folder contains the provenance data collected for the analysis and rewrite method for quantum workflows to benefit from hybrid runtimes presented [here](https://github.com/UST-QuAntiL/QuantME-UseCases/tree/master/2022-closer).
+This folder contains collected provenance data for the analysis and rewrite of quantum workflows to improve their efficiency using hybrid runtimes.
 
-It comprises the following data:
+It comprises two sub-folders:
 
-* measurements of the time required to analyse and rewrite quantum workflows 
-    * [runtime-analysis-and-rewrite.xlsx](./runtime-analysis-and-rewrite.xlsx)
-    * [runtime-analysis-and-rewrite.csv](./runtime-analysis-and-rewrite.csv)
-
-* runtime comparison of a workflow model comprising hybrid algorithms before and after rewriting
-    * [runtime-comparison-workflow.xlsx](./runtime-comparison-workflow.xlsx)
-    * [runtime-comparison-workflow.csv](./runtime-comparison-workflow.csv)
+* [2022-closer](./2022-closer): 
+    * Evaluation of the performance of the analysis and rewrite method
+    * Small comparison of the runtime of original and rewriten workflows
+    
+* [2022-sncs](./2022-sncs):
+    * Extended evaluation of the analysis and rewrite method
+    * Runtime comparison for multiple workflow models and hybrid runtimes
+    * Evaluation of the overhead when collecting provenance data from hybrid runtimes while executing hybrid programs
