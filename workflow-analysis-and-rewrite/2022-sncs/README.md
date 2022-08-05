@@ -5,11 +5,11 @@ A corresponding use case showcasing how to set up the prototype and apply the me
 
 It comprises the following data:
 
-* measurements of the time required to analyse and rewrite various quantum workflows
+* measurements of the time required to analyze and rewrite various quantum workflows
     * [runtime-analysis-and-rewrite.xlsx](./runtime-analysis-and-rewrite.xlsx)
     * [runtime-analysis-and-rewrite.csv](./runtime-analysis-and-rewrite.csv)
 
-* runtime comparison of four workflow model comprising hybrid algorithms before and after rewriting using quantum computers from IBM and Qiskit Runtime
+* runtime comparison of four workflow models comprising hybrid algorithms before and after rewriting using quantum computers from IBM and Qiskit Runtime
     * [workflow-runtime-comparison-IBMQ.xlsx](./workflow-runtime-comparison-IBMQ.xlsx)
     * [workflow-runtime-comparison-IBMQ.csv](./workflow-runtime-comparison-IBMQ.csv)
 
